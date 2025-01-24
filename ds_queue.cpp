@@ -1,9 +1,12 @@
 #include<iostream>
 #include<stdlib.h>
 using namespace std;
-int a[5];
-int f=-1,r=-1;
 
+int a[5];   // Making a queue of 5 elements
+int f = -1, r = -1;
+
+
+// Inserts a new element
 void insertion(){
     if(f==(r+1)%5){
         printf("Queue is FULL");
@@ -21,6 +24,8 @@ void insertion(){
     }
 }
 
+
+// Delete a element - always the element in front
 void deletion(){
     if(f==-1){
         printf("Queue is EMPTY");
@@ -38,6 +43,8 @@ void deletion(){
     }
 }
 
+
+// Displays the queue's elements
 void display(){
     if (f==-1){
         printf("Queue is EMPTY");
@@ -51,6 +58,7 @@ void display(){
 }
 
 
+// Main function
 int main(){
     int choice;
     while(1){
