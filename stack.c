@@ -1,7 +1,9 @@
 #include<stdio.h>
 int size=5, top=-1;
-int a[5];
+int a[5];   // Making a stack of 5 elements
 
+
+// Inserts a new element
 void insertion(){
     if(top==size-1){
         printf("\nOverflow\n");
@@ -13,6 +15,8 @@ void insertion(){
     }
 }
 
+
+// Delete a element - always the element last added or top of stack
 void deletion(){
     if(top==-1){
         printf("\nUnderflow\n");
@@ -22,6 +26,8 @@ void deletion(){
     }
 }
 
+
+// Displays the stack's elements
 void view(){
     int i;
     for(i=0; i<5; i++){
@@ -29,6 +35,8 @@ void view(){
     }
 }
 
+
+// Main Function
 int main(){
     int choice;
     //printf("Enter size: ");
